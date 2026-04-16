@@ -1,35 +1,95 @@
-EduFlow-Registry
-EduFlow-Registry is a comprehensive course management solution designed to streamline the academic registration process. Built with the MERN stack, the platform provides a seamless interface for students to browse and register for courses while giving administrators powerful tools to manage and visualize enrollment data.
+# EduFlow-Registry 🎓
 
-✨ Key Features
-Secure Authentication: Robust login system powered by JWT (JSON Web Tokens) to ensure data privacy and secure session management.
+EduFlow-Registry is a modern, full-stack course registration platform designed to streamline academic enrollment. Built using the **MERN stack**, it provides students with a seamless registration experience and gives administrators a data-driven dashboard to manage the institution efficiently.
 
-Automated Workflows: Integrated student registration flow with real-time status updates (Pending, Approved, Rejected).
+---
 
-Data Visualization: A high-end Admin Analytics Dashboard using Chart.js to track faculty distribution, course popularity, and yearly enrollment trends.
+## ✨ Key Features
 
-Smart Notifications: Automated PDF email notifications sent to students upon registration updates, ensuring transparent communication.
+* **🔐 Secure Authentication:** Full implementation of JWT-based login and registration with Role-Based Access Control (RBAC).
+* **📚 Course Catalog:** Interactive student portal to browse available courses and submit registration requests in real-time.
+* **📊 Admin Analytics:** Professional dashboard featuring **Chart.js** to visualize faculty distribution, course popularity, and enrollment trends.
+* **📑 Automated Workflows:** Admin console for managing student status (Approve/Reject) with high-visibility status badges.
+* **✉️ Smart Notifications:** Integrated email logic designed to send automated updates and PDF confirmations upon registration status changes.
+* **📱 Responsive Design:** A clean, SaaS-style professional UI optimized for both desktop and mobile devices.
 
-Administrative Control: A centralized management console for admins to oversee, filter, and approve student records efficiently.
+---
 
-Modern UI/UX: A clean, professional "SaaS-style" interface built with React and optimized for all device sizes.
+## 🛠️ Tech Stack
 
-🛠️ Tech Stack
-Frontend: React.js, Chart.js, CSS-in-JS
+| Technology | Usage |
+| :--- | :--- |
+| **React.js** | Frontend Library & Component Architecture |
+| **Node.js** | Server-side Environment |
+| **Express.js** | RESTful API Framework |
+| **MongoDB** | NoSQL Database for Scalability |
+| **Mongoose** | Object Data Modeling (ODM) |
+| **Chart.js** | Dynamic Data Visualization |
+| **JWT** | Secure Session & Identity Management |
 
-Backend: Node.js, Express.js
+---
 
-Database: MongoDB & Mongoose
+## 🚀 Getting Started
 
-Security: JWT, Bcrypt
+To get a local copy up and running, follow these steps:
 
-Communication: Nodemailer (PDF integration)
+### Prerequisites
+* Node.js (v14 or higher)
+* MongoDB Atlas account or local MongoDB instance
 
-🧠 Skills Demonstrated
-Designing and consuming RESTful APIs.
+### Installation
 
-Managing complex state and Role-Based Access Control (RBAC).
+1. **Clone the Repo**
+   ```bash
+   git clone [https://github.com/YourUsername/EduFlow-Registry.git](https://github.com/YourUsername/EduFlow-Registry.git)
+   cd EduFlow-Registry
 
-Advanced MongoDB aggregation for analytics.
+   Install Dependencies
 
-Integrating third-party libraries for charting and document generation.
+Bash
+# Install Backend dependencies
+cd backend
+npm install
+
+# Install Frontend dependencies
+cd ../frontend
+npm install
+Environment Setup
+Create a .env file in the backend directory and add your credentials:
+
+Code snippet
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+Run the Application
+
+Bash
+# Start the backend (from backend folder)
+npm start
+
+# Start the frontend (from frontend folder)
+npm start
+📈 Database Schema
+The project uses a structured relationship between three main entities:
+
+Users: Stores student and admin credentials and roles.
+
+Courses: Contains course details (Code, Name, Faculty, Program).
+
+Registrations: Connects Users and Courses with a status tracker (Pending/Approved/Rejected).
+
+🧠 Development Insights
+This project highlights my ability to:
+
+Build and secure a RESTful API from scratch.
+
+Implement complex MongoDB Aggregation pipelines for the analytics engine.
+
+Manage application-wide state and private routing in React.
+
+Design a professional, minimalist UI/UX without relying on heavy external CSS frameworks.
+
+
+
+
+Project Link: https://github.com/THISHA123/EduFlow-Registry/
